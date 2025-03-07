@@ -1,0 +1,24 @@
+<div class="courses-list">
+    <h2>רשימת קורסים</h2>
+    <ul>
+        @for(course of courses;track course.id)
+        {
+        <li >
+            <h3>{{ course.title }}</h3>
+            <button (click)="toggleCourseEnrollment(course.id)">הצטרף לקורס</button>
+            <button (click)="onUnenroll(course.id)">עזוב קורס</button>
+        </li>
+        }
+    </ul>
+</div>
+
+<input type="text" [(ngModel)]="courseId" placeholder="הכנס מזהה קורס">
+<button (click)="viewCourse(courseId)">הצג פרטי קורס</button>
+@if(selectedCourse){
+<div>
+    <h2>פרטי הקורס</h2>
+    <p><strong>כותרת:</strong> {{ selectedCourse.title }}</p>
+    <p><strong>תיאור:</strong> {{ selectedCourse.description }}</p>
+    <p><strong>מזהה מורה:</strong> {{ selectedCourse.teacherId }}</p>
+</div>
+}

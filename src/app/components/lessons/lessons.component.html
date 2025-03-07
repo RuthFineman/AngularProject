@@ -1,0 +1,48 @@
+<h2>רשימת קורסים</h2>
+<ul>
+    @for(course of courses;track course.id){
+    <li>
+        <span>{{ course.title }}</span>
+        <button (click)="getAllLesson(course.id)">לצפייה בשיעורים</button>
+        <button (click)="openAddLessonModal(course.id)">להוספת שיעור לקורס</button>
+        @if(selectedCourseIdForLessons === course.id){
+        <ul>
+            @for(lesson of selectedCourseLessons;track lesson.id)
+            {
+            <li>
+                <span>{{ lesson.title }}</span> - {{ lesson.content }}
+                <button (click)="openUpdateLessonModal(lesson.id,course.id)">לעריכת קורס</button>
+                <button (click)="deleteLesson(course.id, lesson.id)">מחק שיעור</button>
+            </li>
+            }
+        </ul>}
+    </li>}
+</ul>
+@if(isAddLessonOpen)
+{
+<div class="modal-overlay">
+    <div class="modal">
+        <h3>הוספת שיעור חדש</h3>
+        <label for="newTitle">שם השיעור:</label>
+        <input type="text" [(ngModel)]="title" id="title">
+        <label for="newDescription">תיאור:</label>
+        <input type="text" [(ngModel)]="content" id="content">
+        <button (click)="addLesson()">הוסף שיעור</button>
+        <button class="close-btn" (click)="closeModal()">סגור</button>
+    </div>
+</div>
+}
+@if(isUpdateLessonOpen){
+<div class="modal-overlay">
+    <div class="modal">
+        <h3>עדכון שיעור</h3>
+        <label for="newTitle">שם השיעור:</label>
+        <input type="text" [(ngModel)]="title" id="title">
+        <label for="newDescription">תיאור:</label>
+        <input type="text" [(ngModel)]="content" id="content">
+
+        <button (click)="updateLesson()">עדכן שיעור</button>
+        <button class="close-btn" (click)="closeModal2()">סגור</button>
+    </div>
+</div>
+}

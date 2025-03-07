@@ -1,0 +1,32 @@
+<div class="course-list">
+    <h2>רשימת קורסים</h2>
+    <ul>
+        @for(course of courses;track course.id){
+        <li>
+            <span>{{ course.title }}</span>
+            <button (click)="deleteCourse(course.id)">מחק</button>
+
+            <button (click)="selectCourseToUpdate(course.id)">↓ עדכן</button>
+        </li>}
+    </ul>
+</div>
+
+<div>
+    <h3>הוספת קורס חדש</h3>
+    <label for="newTitle">שם קורס:</label>
+    <input type="text" [(ngModel)]="newTitle" id="newTitle">
+    <label for="newDescription">תיאור:</label>
+    <input type="text" [(ngModel)]="newDescription" id="newDescription">
+    <button (click)="addCourse()">הוסף קורס</button>
+</div>
+@if(selectedCourseId)
+{
+<div>
+    <h3>עדכון קורס</h3>
+    <label for="title">שם קורס:</label>
+    <input type="text" [(ngModel)]="title" id="title">
+    <label for="description">תיאור:</label>
+    <input type="text" [(ngModel)]="description" id="description">
+    <button (click)="updateCourse(course.id)">עדכן קורס</button>
+</div>
+}

@@ -1,0 +1,26 @@
+@if(NotConnected)
+{
+  <h2>הרשמה</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <input formControlName="name" placeholder="שם משתמש" required>
+    <input formControlName="email" placeholder="דואר אלקטרוני" required>
+    <input type="password" formControlName="password" placeholder="סיסמה" required>
+    <select formControlName="role" required>
+      <option value="student">סטודנט</option>
+      <option value="teacher">מורה</option>
+      <option value="admin">מנהל</option>
+    </select>
+    <button type="submit">הרשמה</button>
+  </form>
+}
+@if(NotConnected)
+{
+  <h2>התחברות</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <input formControlName="email" placeholder="דואר אלקטרוני" required>
+    <input type="password" formControlName="password" placeholder="סיסמה" required>
+    <button type="submit">התחברות</button>
+  </form>
+}
+<button class="logout-button" (click)="logout()">התנתק</button>
+

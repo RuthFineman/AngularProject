@@ -1,0 +1,131 @@
+
+.courses-list {
+  background-color: rgba(0, 128, 128, 0.1);  /* טורקיז עם שקיפות */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 128, 128, 0.3);  /* הצללה חזקה יותר */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* עיצוב כותרת ראשית */
+.courses-list h2 {
+  color: #008080;  /* צבע טורקיז */
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* עיצוב הרשימה */
+.courses-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.courses-list ul li {
+  background-color: rgba(0, 128, 128, 0.1);  /* טורקיז עם שקיפות */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 128, 128, 0.3);  /* הצללה חזקה יותר */
+  width: 280px;  /* גודל קבוע לכל כרטיס */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.courses-list ul li:hover {
+  transform: scale(1.05);  /* הגדלת הכרטיס במעבר */
+}
+
+.courses-list ul li h3 {
+  color: #008080;  /* טורקיז */
+  font-size: 15x;
+  margin: 0 0 10px 0;
+}
+
+.courses-list ul li button {
+  background-color: rgba(128, 128, 128, 0.2);  /* אפור-שקוף */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.courses-list ul li button:hover {
+  background-color: rgba(128, 128, 128, 0.4);  /* אפור-שקוף כהה */
+}
+
+/* עיצוב שדה הקלט - ממוקם במרכז */
+input[type="text"] {
+  width: 250px;  /* גודל קטן יותר */
+  padding: 10px;
+  margin: 20px auto;  /* ממקם את השדה במרכז */
+  display: block;
+  border: 1px solid rgba(128, 128, 128, 0.4);  /* אפור-שקוף */
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.1);  /* אפור-שקוף */
+  font-size: 14px;  /* גודל קטן יותר */
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #008080;  /* טורקיז */
+  background-color: rgba(0, 128, 128, 0.05);  /* שינוי צבע רקע כשיש פוקוס */
+}
+
+/* עיצוב כפתור - יותר קטן */
+button {
+  background-color: #008080;  /* טורקיז */
+  color: white;
+  padding: 10px 20px;  /* קטן יותר */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;  /* גודל קטן יותר */
+  transition: background-color 0.3s ease;
+  width: 100%;  /* לוקח את כל רוחב הקונטיינר */
+}
+button:hover {
+  background-color: #006666;  /* טורקיז כהה */
+}
+/* עיצוב פרטי הקורס */
+div {
+  background-color: rgba(0, 128, 128, 0.1);  /* טורקיז עם שקיפות */
+  padding: 20px;  /* קטן יותר */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 128, 128, 0.3);  /* הצללה חזקה יותר */
+  max-width: 900px;
+  margin: 20px auto;
+}
+div h2 {
+  color: #008080;  /* טורקיז */
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+div p {
+  font-size: 16px;  /* קטן יותר */
+  margin-bottom: 15px;
+}
+div strong {
+  color: #008080;  /* טורקיז */
+  font-weight: bold;
+}
+.enrolled-course {
+  background-color: #004d40; /* טורקיז כהה */
+  color: white;
+}
+.enrolled-course button {
+  background-color: #00695c; /* שינוי צבע כפתור */
+}
+

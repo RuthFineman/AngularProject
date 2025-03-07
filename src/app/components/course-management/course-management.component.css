@@ -1,0 +1,148 @@
+/* עיצוב כללי של הקורסים */
+.course-list {
+    background-color: rgba(0, 128, 128, 0.1);  /* טורקיז עם שקיפות */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 128, 128, 0.3);  /* הצללה חזקה יותר */
+    max-width: 1200px;
+    margin: 20px auto;  /* ממקם במרכז */
+}
+
+/* עיצוב כותרת ראשית */
+.course-list h2 {
+    color: #008080;  /* טורקיז */
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* עיצוב רשימה */
+.course-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-list ul li {
+    background-color: rgba(0, 128, 128, 0.1);  /* טורקיז עם שקיפות */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.3);  /* הצללה חזקה יותר */
+    width: 250px;  /* גודל קבוע */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-list ul li:hover {
+    transform: scale(1.05);  /* הגדלה עם מעבר */
+}
+
+.course-list ul li span {
+    color: #008080;  /* טורקיז */
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.course-list ul li button {
+    background-color: rgba(128, 128, 128, 0.2);  /* אפור-שקוף */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-list ul li button:hover {
+    background-color: rgba(128, 128, 128, 0.4);  /* אפור-שקוף כהה */
+}
+
+/* עיצוב טפסים */
+div {
+    background-color: rgba(0, 128, 128, 0.1);  /* טורקיז עם שקיפות */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 128, 128, 0.3);  /* הצללה חזקה יותר */
+    max-width: 900px;
+    margin: 20px auto;  /* ממקם במרכז */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* ממקם את התוכן במרכז */
+}
+
+div h3 {
+    color: #008080;  /* טורקיז */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* עיצוב טופס הוספת קורס */
+label {
+    color: #008080;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* עיצוב input */
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid rgba(128, 128, 128, 0.4);  /* אפור-שקוף */
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.1);  /* אפור-שקוף */
+    font-size: 14px;
+}
+
+/* התמקדות ב-input */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #008080;
+    background-color: rgba(0, 128, 128, 0.05);
+}
+
+button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #006666;  /* טורקיז כהה */
+}
+
+/* עיצוב כפתור עדכון */
+button.update-button {
+    width: 200px;
+    margin: 10px auto;
+    padding: 8px 16px;
+}
+
+button.update-button:hover {
+    background-color: #006666;  /* טורקיז כהה */
+}
+
+/* למרכז את השדות של "שם קורס" ו"תיאור" */
+div input[type="text"] {
+    width: 80%;  /* מתיחה של השדות עד 80% מהרוחב של המלבן */
+    margin: 10px 0;
+    text-align: center;  /* למרכז את התוכן בתוך השדה */
+}

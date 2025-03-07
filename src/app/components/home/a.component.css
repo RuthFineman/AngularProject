@@ -1,0 +1,101 @@
+
+html, body {
+    overflow-x: hidden;
+}
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 128, 128, 0.1); 
+    width: 100%;
+    padding: 40px;
+    overflow-x: hidden;  
+}
+.hero-overlay {
+    max-width: 900px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 30px;
+    border-radius: 20px;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: #008080; 
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+}
+
+.cta-button {
+    background-color:  #008080;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color:  #008080; 
+}
+
+.mat-icon {
+    font-size: 1.5rem; 
+    color: #0097a7;
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 40px 0;
+    gap: 30px;
+}
+.feature-card {
+    background-color: rgba(224, 247, 250, 0.9); /* טורקיז בהיר ושקוף */
+    padding: 25px; /* הגדלתי את ה-padding */
+    border-radius: 15px;
+    text-align: center;
+    max-width: 250px; /* הגדלתי את ה-max-width */
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+* {
+    box-sizing: border-box;
+}

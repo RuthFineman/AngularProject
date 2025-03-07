@@ -1,0 +1,57 @@
+form {
+    background-color: rgba(0, 128, 128, 0.1); 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 128, 128, 0.3);  
+    max-width: 400px;
+    margin: 20px auto;  
+}
+h2 {
+    color: #008080; 
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="password"], select {
+    width: 100%;  
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(128, 128, 128, 0.4);  
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.1);  
+    font-size: 14px;
+}
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    outline: none;
+    border-color: #008080;  
+    background-color: rgba(0, 128, 128, 0.05);  
+}
+button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #006666;  
+}
+button.logout-button {
+    background-color: #ff4d4d;  
+    margin-top: 20px;
+    width: auto;
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button.logout-button:hover {
+    background-color: #cc3333; 
+} 
+
