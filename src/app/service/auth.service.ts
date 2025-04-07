@@ -8,7 +8,8 @@ import { JwtPayload, jwtDecode } from 'jwt-decode';
 })
   
 export class AuthService {
-  private apiUrl = 'http://localhost:3000'; 
+  // private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://angularprojectserver.onrender.com';
   constructor(private http: HttpClient) { }
   getToken(): string | null {
     return sessionStorage.getItem('token'); 
